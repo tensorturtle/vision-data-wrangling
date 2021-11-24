@@ -7,5 +7,6 @@
 # fps: 30 (every frame),1 ( every second), 1/60 (every minute)
 # output_dir: your output image directory
 # output_%d: the "%d" is special, it will be replaced with the frame number
-ffmpeg -i input.mp4 -vf fps=30  output_dir/output_%d.jpg
+#   06 means that the number will be formatted using 6 digits
+ffmpeg -i input.mp4 -vf fps=30  output_dir/output_%06d.jpg
 
